@@ -18,6 +18,9 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame BackgroundColor="Grey" CornerRadius="50" Margin="10,10,10,0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTermTapped" CommandParameter="{Binding TermId}"/>
+                            </Frame.GestureRecognizers>
                             <VerticalStackLayout>
                                 <Label Text="{Binding TermName}" FontSize="18" FontAttributes="Bold"/>
                                 <HorizontalStackLayout>
@@ -38,7 +41,6 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Add Term" 
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="GoAddTermPage_Clicked"
                 HorizontalOptions="Fill" CornerRadius="100" />
         </VerticalStackLayout>

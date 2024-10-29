@@ -26,6 +26,11 @@ namespace C971MobileApp
             return await _connection.Table<Term>().ToListAsync();
         }
 
+        public async Task<Term> GetTermById(int termId)
+        {
+            return await _connection.Table<Term>().Where(x => x.TermId == termId).FirstOrDefaultAsync();
+        }
+
         public async Task<List<Course>> GetAllCourses(int termId)
         {
             return await _connection.Table<Course>().Where(x => x.TermId == termId).ToListAsync();

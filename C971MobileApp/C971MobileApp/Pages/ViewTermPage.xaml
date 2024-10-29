@@ -5,8 +5,9 @@
              Title="ViewTermPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Term Page"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label x:Name="TermNameLabel" Text="Term Name Here"/>
     </VerticalStackLayout>
 </ContentPage>

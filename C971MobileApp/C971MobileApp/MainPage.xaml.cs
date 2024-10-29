@@ -16,7 +16,7 @@ namespace C971MobileApp
             LoadTerms();
         }
 
-        
+
         private async void GoAddTermPage_Clicked(Object sender, EventArgs e)
         {
             var addTermPage = ((App)Application.Current).ServiceProvider.GetService<AddTermPage>();
@@ -28,8 +28,8 @@ namespace C971MobileApp
         {
             Terms.Clear();
             var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
-            
-            if(dbService != null)
+
+            if (dbService != null)
             {
                 List<Term> termsList = await dbService.GetAllTerms();
                 foreach (var term in termsList)
@@ -41,6 +41,25 @@ namespace C971MobileApp
             {
                 Console.WriteLine("DBService not available");
             }
+
+        }
+        private async void OnTermTapped(Object sender, EventArgs e)
+        {
+            var frame = (Frame)sender;
+            var tapGesture = frame.GestureRecognizers.OfType<TapGestureRecognizer>().FirstOrDefault();
+            if (tapGesture != null) {
+                var termId = tapGesture.CommandParameter;
+                if (termId is int termIdInt)
+                {
+                    await Navigation.PushAsync(new ViewTermPage(termIdInt));
+
+                }
+                else
+                {
+                    Console.WriteLine("Invalid ID type");
+                }
+            }
+
             
         }
     }

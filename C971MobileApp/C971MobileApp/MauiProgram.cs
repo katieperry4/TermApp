@@ -18,6 +18,7 @@ namespace C971MobileApp
             builder.Services.AddSingleton<DBService>();
             builder.Services.AddTransient<MainPage>();
             builder.Services.AddTransient<AddTermPage>();
+            builder.Services.AddTransient<ViewTermPage>();
 
             
 
