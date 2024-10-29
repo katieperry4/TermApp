@@ -64,7 +64,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Wireframes\Part3\" />
-	  <Folder Include="Wireframes\Part2\" />
 	</ItemGroup>
 
 </Project>
