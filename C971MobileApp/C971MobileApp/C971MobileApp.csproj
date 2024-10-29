@@ -62,4 +62,9 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Wireframes\Part3\" />
+	  <Folder Include="Wireframes\Part2\" />
+	</ItemGroup>
+
 </Project>

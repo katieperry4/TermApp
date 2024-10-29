@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wmuser\\Desktop\\Projects\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj": {}
+    "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wmuser\\Desktop\\Projects\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj": {
+    "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wmuser\\Desktop\\Projects\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj",
+        "projectUniqueName": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj",
         "projectName": "C971MobileApp",
-        "projectPath": "C:\\Users\\wmuser\\Desktop\\Projects\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj",
+        "projectPath": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\C971MobileApp.csproj",
         "packagesPath": "C:\\Users\\wmuser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wmuser\\Desktop\\Projects\\C971MobileApp\\C971MobileApp\\obj\\",
+        "outputPath": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
