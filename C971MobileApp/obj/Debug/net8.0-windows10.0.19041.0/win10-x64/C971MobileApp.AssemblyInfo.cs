@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("C971MobileApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b062472cd342a7827623546ffcfd600348c408cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2f3b34d3bb631a34d9201b7852aa1c24ff07bb8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("C971MobileApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("C971MobileApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
