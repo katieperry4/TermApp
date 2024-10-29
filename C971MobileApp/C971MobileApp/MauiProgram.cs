@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using C971MobileApp.Pages;
+using Microsoft.Extensions.Logging;
 
 namespace C971MobileApp
 {
@@ -14,6 +15,11 @@ namespace C971MobileApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.Services.AddSingleton<DBService>();
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<AddTermPage>();
+
+            
 
 #if DEBUG
     		builder.Logging.AddDebug();

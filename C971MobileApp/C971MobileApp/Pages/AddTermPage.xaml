@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971MobileApp.Pages.AddTermPage"
+             Title="AddTermPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Add Term"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Large"
+            />
+        <Label
+            Text="Term Name:"
+            Margin="20,10,0,0"
+            />
+        <Entry 
+            x:Name="termNameField"
+            Placeholder="Enter term name here"
+            Margin="20,10,20,0"
+            />
+        <Label 
+            Text="Start Date:"
+            Margin="20,10,20,0"
+            />
+        <DatePicker 
+            x:Name="startDateField"
+            Date="{Binding SelectedDate}"
+            Margin="20,10,20,0"
+            />
+        <Label 
+            Text="End Date:"
+            Margin="20,10,20,0"
+            />
+        <DatePicker 
+            x:Name="endDateField"
+            Date="{Binding SelectedDate}"
+            Margin="20,10,20,0"
+            />
+        <Button 
+            x:Name="addTermButton"
+            Text="Add Term"
+            WidthRequest="250"
+            Margin="20"
+            Clicked="AddTermButton_Clicked"
+            />
+        <Button 
+            x:Name="cancelButton"
+            Text="Cancel"
+            BackgroundColor="Grey"
+            WidthRequest="250"
+            Clicked="CancelButton_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>

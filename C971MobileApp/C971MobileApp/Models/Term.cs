@@ -24,5 +24,8 @@ namespace C971MobileApp.Models
         [Column("termEnd")]
         public DateTime TermEnd { get; set; }
 
+        public string FormattedTermStart => TermStart.ToString("MMM dd yyyy");
+        public string FormattedTermEnd => TermEnd.ToString("MMM dd yyyy");
+
     }
 }

@@ -1,24 +1,47 @@
-﻿namespace C971MobileApp
+﻿using C971MobileApp.Models;
+using C971MobileApp.Pages;
+using System.Collections.ObjectModel;
+
+namespace C971MobileApp
 {
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        public ObservableCollection<Term> Terms { get; set; } = new();
 
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = this;
+            LoadTerms();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        
+        private async void GoAddTermPage_Clicked(Object sender, EventArgs e)
         {
-            count++;
+            var addTermPage = ((App)Application.Current).ServiceProvider.GetService<AddTermPage>();
+            addTermPage.TermAdded += LoadTerms;
+            await Navigation.PushAsync(addTermPage);
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+        public async void LoadTerms()
+        {
+            Terms.Clear();
+            var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
+            
+            if(dbService != null)
+            {
+                List<Term> termsList = await dbService.GetAllTerms();
+                foreach (var term in termsList)
+                {
+                    Terms.Add(term);
+                }
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                Console.WriteLine("DBService not available");
+            }
+            
         }
     }
 
