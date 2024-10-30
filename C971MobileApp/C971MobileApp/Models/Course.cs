@@ -21,7 +21,7 @@ namespace C971MobileApp.Models
         public string CourseName { get; set; }
 
         [Column("courseStatus")]
-        public bool CourseStatus { get; set; }
+        public string CourseStatus { get; set; }
 
         [Column("courseStart")]
         public DateTime CourseStart {  get; set; }
@@ -34,7 +34,7 @@ namespace C971MobileApp.Models
         public string CIPhone { get; set; }
 
         [Column("courseNotes")]
-        public string CourseNotes { get; set; }
+        public string? CourseNotes { get; set; }
 
         [Column("startNotif")]
         public bool StartNotif { get; set; }

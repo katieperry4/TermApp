@@ -55,6 +55,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.EditTe
 build_metadata.AdditionalFiles.TargetPath = Pages\EditTermPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\EditTermPage.xaml
 
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewCoursePage.xaml
+
 [C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewTermPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewTermPage.xaml

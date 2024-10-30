@@ -13,12 +13,18 @@ public partial class ViewTermPage : ContentPage
     public ViewTermPage(int termId)
 	{
 		InitializeComponent();
+        BindingContext = this;
 		_termId = termId;
 		var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
 		_dbService = dbService;
 
-		LoadTermData(termId);
+		
 	}
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        LoadTermData(_termId);
+    }
 
     private async void LoadTermData(int termId)
     {

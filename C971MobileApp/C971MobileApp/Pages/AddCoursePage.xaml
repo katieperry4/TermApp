@@ -40,10 +40,18 @@
     />
 
      <Label Text="Course Status" Margin="20,20,20,0" />
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <RadioButton x:Name="ActivityRadio"  Content="Active" GroupName="Activity" Margin="0,0,20,0"/>
-            <RadioButton Content="Inactive" GroupName="Activity"/>
-        </HorizontalStackLayout>
+            <Picker x:Name="StatusPicker" Title="Select Course Status" Margin="20,20,20,0">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Plan to Take</x:String>
+                        <x:String>In Progress</x:String>
+                        <x:String>Completed</x:String>
+                        <x:String>Dropped</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                
+                
+            </Picker>
 
      <Label Text="Course Instructor Name:" Margin="20,20,20,0"/>
      <Entry 
@@ -65,20 +73,17 @@
      />
 
      <Label Text="Notes:" Margin="20,30,20,0" />
-        <Editor Placeholder="Enter notes here" Margin="20,10,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Editor x:Name="NotesField" Placeholder="Enter notes here" Margin="20,10,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
         
         
         
         <Label Text="Notifications:" Margin="20,30,20,0"  />
         <VerticalStackLayout HorizontalOptions="Center">
             <HorizontalStackLayout>
-                <Label Text="Start Date:" VerticalOptions="Center"/>
+                <Label Text="Send me notifications for start and end dates" VerticalOptions="Center"/>
                 <CheckBox x:Name="StartNotifBox"  />
             </HorizontalStackLayout>
-            <HorizontalStackLayout>
-                <Label Text="End Date:" VerticalOptions="Center" />
-                <CheckBox x:Name="EndNotifBox"  />
-            </HorizontalStackLayout>
+            
         </VerticalStackLayout>
         <Button 
     x:Name="AddCourseButton"

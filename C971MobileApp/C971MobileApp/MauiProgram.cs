@@ -1,5 +1,6 @@
 ﻿using C971MobileApp.Pages;
 using Microsoft.Extensions.Logging;
+using Plugin.LocalNotification;
 
 namespace C971MobileApp
 {
@@ -10,17 +11,22 @@ namespace C971MobileApp
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseLocalNotification()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.Services.AddSingleton<DBService>();
+            builder.Services.AddSingleton<CourseNotificationService>();
+            builder.Services.AddSingleton<AssessmentNotificationService>();
             builder.Services.AddTransient<MainPage>();
             builder.Services.AddTransient<AddTermPage>();
             builder.Services.AddTransient<ViewTermPage>();
             builder.Services.AddTransient<EditTermPage>();
             builder.Services.AddTransient<AddCoursePage>();
+            builder.Services.AddTransient<ViewCoursePage>();
+
 
             
 
