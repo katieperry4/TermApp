@@ -50,6 +50,14 @@ public partial class ViewTermPage : ContentPage
 
     public async void AddCourseButton_Clicked(Object sender, EventArgs e)
     {
+        var addCoursePage = new AddCoursePage(_termId);
+
+        addCoursePage.ChangeMade += () => LoadCourses();
+        await Navigation.PushAsync(addCoursePage);
+    }
+
+    private async void OnCourseTapped(Object sender, EventArgs e)
+    {
         throw new NotImplementedException();
     }
 }

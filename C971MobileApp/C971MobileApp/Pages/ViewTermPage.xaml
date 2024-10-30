@@ -31,7 +31,7 @@
                 <DataTemplate>
                     <Frame BackgroundColor="Grey" CornerRadius="50" Margin="10,10,10,0">
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnTermTapped" CommandParameter="{Binding CourseId}"/>
+                            <TapGestureRecognizer Tapped="OnCourseTapped" CommandParameter="{Binding CourseId}"/>
                         </Frame.GestureRecognizers>
                         <VerticalStackLayout>
                             <Label Text="{Binding CourseName}" FontSize="18" FontAttributes="Bold"/>

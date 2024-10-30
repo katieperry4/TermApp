@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971MobileApp.Pages.AddCoursePage"
+             Title="AddCoursePage">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label 
+    Text="Add Course"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center"
+    FontSize="Large"
+    />
+        <Label
+    Text="Course Name:"
+    Margin="20,10,0,0"
+    />
+        <Entry 
+    x:Name="CourseNameField"
+    Placeholder="Enter course name here"
+    Margin="20,10,20,0"
+    />
+        <Label 
+    Text="Start Date:"
+    Margin="20,10,20,0"
+    />
+        <DatePicker 
+    x:Name="StartDateField"
+    Date="{Binding SelectedDate}"
+    Margin="20,10,20,0"
+    />
+        <Label 
+    Text="End Date:"
+    Margin="20,10,20,0"
+    />
+        <DatePicker 
+    x:Name="EndDateField"
+    Date="{Binding SelectedDate}"
+    Margin="20,10,20,0"
+    />
+
+     <Label Text="Course Status" Margin="20,20,20,0" />
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <RadioButton x:Name="ActivityRadio"  Content="Active" GroupName="Activity" Margin="0,0,20,0"/>
+            <RadioButton Content="Inactive" GroupName="Activity"/>
+        </HorizontalStackLayout>
+
+     <Label Text="Course Instructor Name:" Margin="20,20,20,0"/>
+     <Entry 
+     x:Name="CINameField"
+     Placeholder="John Smith"
+     Margin="20,10,20,0"
+     />
+     <Label Text="Course Instructor Email:" Margin="20,10,20,0"/>
+     <Entry 
+     x:Name="CIEmailField"
+     Placeholder="example@email.com"
+     Margin="20,10,20,0"
+     />
+     <Label Text="Course Instructor Phone Number:" Margin="20,10,20,0"/>
+     <Entry 
+     x:Name="CIPhoneField"
+     Placeholder="555-555-5555"
+     Margin="20,10,20,0"
+     />
+
+     <Label Text="Notes:" Margin="20,30,20,0" />
+        <Editor Placeholder="Enter notes here" Margin="20,10,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+        
+        
+        
+        <Label Text="Notifications:" Margin="20,30,20,0"  />
+        <VerticalStackLayout HorizontalOptions="Center">
+            <HorizontalStackLayout>
+                <Label Text="Start Date:" VerticalOptions="Center"/>
+                <CheckBox x:Name="StartNotifBox"  />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="End Date:" VerticalOptions="Center" />
+                <CheckBox x:Name="EndNotifBox"  />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        <Button 
+    x:Name="AddCourseButton"
+    Text="Add Course"
+    WidthRequest="250"
+    Margin="20"
+    Clicked="AddCourseButton_Clicked"
+    />
+        <Button 
+    x:Name="cancelButton"
+    Text="Cancel"
+    BackgroundColor="Grey"
+    WidthRequest="250"
+    Clicked="CancelButton_Clicked"
+    />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
