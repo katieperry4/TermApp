@@ -1,5 +1,6 @@
 
 using C971MobileApp.Models;
+using System.Collections.ObjectModel;
 
 namespace C971MobileApp.Pages;
 
@@ -7,6 +8,7 @@ public partial class ViewTermPage : ContentPage
 {
     private int _termId;
     private readonly DBService? _dbService;
+    public ObservableCollection<Course> Courses { get; set; } = new();
 
     public ViewTermPage(int termId)
 	{
@@ -23,5 +25,31 @@ public partial class ViewTermPage : ContentPage
         Term term  = await _dbService.GetTermById(termId);
 
         TermNameLabel.Text = term.TermName;
+        StartDateLabel.Text = term.FormattedTermStart;
+        EndDateLabel.Text = term.FormattedTermEnd;
+        LoadCourses();
+    }
+
+    private async void LoadCourses()
+    {
+        Courses.Clear();
+        List<Course> courses = await _dbService.GetAllCourses(_termId);
+        foreach (Course course in courses)
+        {
+            Courses.Add(course);
+        }
+    }
+
+    private async void EditTermButton_Clicked(Object sender, EventArgs e)
+    {
+        var editTermPage = new EditTermPage(_termId);
+        editTermPage.ChangeMade += () => LoadTermData(_termId);
+        await Navigation.PushAsync(editTermPage);
+
+    }
+
+    public async void AddCourseButton_Clicked(Object sender, EventArgs e)
+    {
+        throw new NotImplementedException();
     }
 }

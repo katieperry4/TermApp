@@ -41,5 +41,8 @@ namespace C971MobileApp.Models
 
         [Column("endNotif")]
         public bool EndNotif { get; set; }
+
+        public string FormattedCourseStart => CourseStart.ToString("MMM dd yyyy");
+        public string FormattedCourseEnd => CourseEnd.ToString("MMM dd yyyy");
     }
 }

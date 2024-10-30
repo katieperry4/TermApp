@@ -13,9 +13,14 @@ namespace C971MobileApp
         {
             InitializeComponent();
             BindingContext = this;
-            LoadTerms();
+            
         }
 
+        protected  override void OnAppearing()
+        {
+            base.OnAppearing();
+            LoadTerms();
+        }
 
         private async void GoAddTermPage_Clicked(Object sender, EventArgs e)
         {
