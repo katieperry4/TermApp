@@ -44,40 +44,37 @@
             
             
             </HorizontalStackLayout>
-            <Label Text="Notifications:" Margin="20,30,20,0" FontSize="Medium" />
-            <VerticalStackLayout HorizontalOptions="Center">
-                <HorizontalStackLayout>
-                    <Label Text="Send me notifications for start and end dates" VerticalOptions="Center"/>
-                    <CheckBox IsEnabled="False" x:Name="StartNotifBox"/>
-                </HorizontalStackLayout>
-            </VerticalStackLayout>
+            <HorizontalStackLayout  Margin="20,30,20,0" HorizontalOptions="Center">
+                <Label Text="Notifications: " FontAttributes="Bold"/>
+                <Label x:Name="NotifLabel"/>
+            </HorizontalStackLayout>
 
             <Label Text="Assessments:" Margin="20,20,0,10" FontSize="Medium"/>
             <Label Text="Performance Assessment" Margin="20,10,20,0"/>
-            <Frame Margin="20,10,20,10" BackgroundColor="LightGrey">
+            <Frame Margin="20,10,20,10" BackgroundColor="#512BD4">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="PATapGestureRecognizer_Tapped"/>
                 </Frame.GestureRecognizers>
                 <VerticalStackLayout>
-                    <Label x:Name="PerformanceAssessmentName" Text="Add Assessment +"/>
+                    <Label x:Name="PerformanceAssessmentName" TextColor="White"  Text="Add Assessment +"/>
                     <HorizontalStackLayout>
-                        <Label x:Name="PerformanceAssessmentStart"  />
-                        <Label Text=" - "/>
-                        <Label x:Name="PerformanceAssessmentEnd"/>
+                        <Label x:Name="PerformanceAssessmentStart" TextColor="White"  />
+                        <Label Text=" - " TextColor="White" />
+                        <Label x:Name="PerformanceAssessmentEnd" TextColor="White" />
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
             </Frame>
             <Label Text="Objective Assessment" Margin="20,10,20,0"/>
-            <Frame Margin="20,10,20,100" BackgroundColor="LightGrey">
+            <Frame Margin="20,10,20,100" BackgroundColor="#512BD4">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OATapGestureRecognizer_Tapped"/>
                 </Frame.GestureRecognizers>
                 <VerticalStackLayout>
-                    <Label x:Name="ObjectiveAssessmentName" Text="Add Assessment +"/>
+                    <Label x:Name="ObjectiveAssessmentName" TextColor="White" Text="Add Assessment +"/>
                     <HorizontalStackLayout>
-                        <Label x:Name="ObjectiveAssessmentStart"/>
-                        <Label Text=" - "/>
-                        <Label x:Name="ObjectiveAssessmentEnd"/>
+                        <Label x:Name="ObjectiveAssessmentStart" TextColor="White"/>
+                        <Label Text=" - " TextColor="White"/>
+                        <Label x:Name="ObjectiveAssessmentEnd" TextColor="White"/>
                     </HorizontalStackLayout>
                 </VerticalStackLayout>
             </Frame>

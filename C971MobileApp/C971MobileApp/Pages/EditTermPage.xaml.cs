@@ -43,9 +43,19 @@ public partial class EditTermPage : ContentPage
 			currentTerm.TermStart = startDateField.Date;
 			currentTerm.TermEnd = endDateField.Date;
 
-			await _dbService.UpdateTerm(currentTerm);
-			ChangeMade?.Invoke();
-            await Navigation.PopAsync();
+			if(string.IsNullOrWhiteSpace(currentTerm.TermName) || currentTerm.TermEnd < currentTerm.TermStart)
+			{
+                await DisplayAlert("Validation Error", "Ensure all fields are full and dates are correct", "OK");
+                return;
+
+            } else
+			{
+                await _dbService.UpdateTerm(currentTerm);
+                ChangeMade?.Invoke();
+                await Navigation.PopAsync();
+            }
+
+            
         }
 	}
 
@@ -55,8 +65,10 @@ public partial class EditTermPage : ContentPage
         {
             Term currentTerm = await _dbService.GetTermById(_termId);
             await _dbService.DeleteTerm(currentTerm);
-            ChangeMade?.Invoke();
-            await Navigation.PopAsync();
+			currentTerm = null;
+            await Task.Delay(100);
+            await Navigation.PopToRootAsync();
+            //Application.Current.MainPage = new NavigationPage(new MainPage());
         }
     }
 }

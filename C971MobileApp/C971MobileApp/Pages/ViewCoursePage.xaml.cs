@@ -9,6 +9,8 @@ public partial class ViewCoursePage : ContentPage
     private DBService? _dbService;
     private int _courseId;
     private Course _currentCourse;
+    private Assessment? _performanceAssessment;
+    private Assessment? _objectiveAssessment;
 
     public ViewCoursePage(int courseId)
 	{
@@ -22,6 +24,41 @@ public partial class ViewCoursePage : ContentPage
     {
         base.OnAppearing();
         LoadCourseData(_courseId);
+        CheckAssessments(_courseId);
+    }
+
+    private async void CheckAssessments(int courseId)
+    {
+        _performanceAssessment = null;
+        _objectiveAssessment = null;
+        List<Assessment> assessments = await _dbService.GetAssessments(courseId);
+        Assessment performanceAssessment = assessments.FirstOrDefault(a => a.AssessmentType == "Performance");
+        Assessment objectiveAssessment = assessments.FirstOrDefault(a => a.AssessmentType == "Objective");
+        _performanceAssessment = performanceAssessment;
+        _objectiveAssessment = objectiveAssessment;
+        if(performanceAssessment != null)
+        {
+            PerformanceAssessmentName.Text = performanceAssessment.AssessmentName;
+            PerformanceAssessmentStart.Text = performanceAssessment.FormattedAssessmentStart;
+            PerformanceAssessmentEnd.Text = performanceAssessment.FormattedAssessmentEnd;
+        }
+        else
+        {
+            PerformanceAssessmentName.Text = "Add Assessment +";
+            PerformanceAssessmentStart.Text = "";
+            PerformanceAssessmentEnd.Text = "";
+        }
+        if (objectiveAssessment != null) 
+        {
+            ObjectiveAssessmentName.Text = objectiveAssessment.AssessmentName;
+            ObjectiveAssessmentStart.Text = objectiveAssessment.FormattedAssessmentStart;
+            ObjectiveAssessmentEnd.Text = objectiveAssessment.FormattedAssessmentEnd;
+        } else
+        {
+            ObjectiveAssessmentName.Text = "Add Assessment +";
+            ObjectiveAssessmentStart.Text = "";
+            ObjectiveAssessmentEnd.Text = "";
+        }
     }
 
     private async void LoadCourseData(int courseId)
@@ -36,13 +73,7 @@ public partial class ViewCoursePage : ContentPage
         CIEmailLabel.Text = currentCourse.CIEmail;
         CIPhoneLabel.Text = currentCourse.CIPhone;
         NotesEditor.Text = currentCourse.CourseNotes;
-        if(currentCourse.StartNotif == true)
-        {
-            StartNotifBox.IsChecked = true;
-        } else
-        {
-            StartNotifBox.IsChecked = false;
-        }
+        NotifLabel.Text = currentCourse.StartNotif ? "Enabled" : "Disabled";
     }
 
     private async void ShareButton_Clicked(object sender, EventArgs e)
@@ -70,14 +101,32 @@ public partial class ViewCoursePage : ContentPage
         await Navigation.PushAsync(editCoursePage);
     }
 
-    private void PATapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    private async void PATapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-        throw new NotImplementedException();
+        if (_performanceAssessment == null)
+        {
+            //add assessment
+            await Navigation.PushAsync(new AddAssessmentPage(_courseId, "Performance"));
+        }
+        else
+        {
+            //view assessment
+            await Navigation.PushAsync(new ViewAssessmentPage(_performanceAssessment));
+        }
     }
 
-    private void OATapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    private async void OATapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-        throw new NotImplementedException();
+        if (_objectiveAssessment == null)
+        {
+            //add assessment
+            await Navigation.PushAsync(new AddAssessmentPage(_courseId, "Objective"));
+        }
+        else
+        {
+            //view assessment
+            await Navigation.PushAsync(new ViewAssessmentPage(_objectiveAssessment));
+        }
     }
 
 }

@@ -7,6 +7,7 @@ public partial class EditCoursePage : ContentPage
 {
     private int _courseId;
     private CourseNotificationService? _courseNotificationService;
+    private AssessmentNotificationService? _assessmentNotificationService;
     private DBService? _dbService;
     private Course _currentCourse;
 
@@ -16,7 +17,9 @@ public partial class EditCoursePage : ContentPage
 		_courseId = courseId;
 		var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
 		var courseNotificationService = ((App)Application.Current).ServiceProvider.GetService<CourseNotificationService>();
+		var assessmentNotificationService = ((App)Application.Current).ServiceProvider.GetService<AssessmentNotificationService>();
         _courseNotificationService = courseNotificationService;
+        _assessmentNotificationService = assessmentNotificationService;
 		_dbService = dbService;
         LoadCourseInfo(_courseId);
         
@@ -89,16 +92,28 @@ public partial class EditCoursePage : ContentPage
         }
         else
         {
-            await DisplayAlert("Validation Error", "Ensure all fields are full", "OK");
+            await DisplayAlert("Validation Error", "Ensure all fields are full and dates are correct", "OK");
             return;
         }
     }
 
     private async void deleteButton_Clicked(object sender, EventArgs e)
     {
-        await _dbService.DeleteCourse(_currentCourse);
-        await Navigation.PopAsync();
-        await Navigation.PopAsync();
+        List<Assessment> associatedAssessments = await _dbService.GetAssessments(_courseId);
+        if (_currentCourse != null)
+        {
+            await _dbService.DeleteCourse(_currentCourse);
+            foreach (Assessment assessment in associatedAssessments)
+            {
+                await _dbService.DeleteAssessment(assessment);
+                await _assessmentNotificationService.CancelAssessmentNotification(assessment.AssessmentId);
+            }
+            await _courseNotificationService.CancelCourseNotification(_courseId);
+            var navigationStack = Navigation.NavigationStack;
+            Navigation.RemovePage(navigationStack[navigationStack.Count - 2]);
+            await Navigation.PopAsync();
+         
+        }
     }
 
     private bool CheckInput()

@@ -26,7 +26,7 @@ public partial class AddCoursePage : ContentPage
         if (string.IsNullOrWhiteSpace(CourseNameField.Text)||
             string.IsNullOrWhiteSpace(CINameField.Text) ||
             string.IsNullOrWhiteSpace(CIEmailField.Text) ||
-            string.IsNullOrWhiteSpace(CIPhoneField.Text)
+            string.IsNullOrWhiteSpace(CIPhoneField.Text) || EndDateField.Date < StartDateField.Date
             )
         {
             return false;
@@ -64,7 +64,7 @@ public partial class AddCoursePage : ContentPage
         }
         else
         {
-            await DisplayAlert("Validation Error", "Ensure all fields are full", "OK");
+            await DisplayAlert("Validation Error", "Ensure all fields are full and dates are correct", "OK");
             return;
         }
 	}

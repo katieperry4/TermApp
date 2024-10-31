@@ -25,7 +25,7 @@ namespace C971MobileApp
         private async void GoAddTermPage_Clicked(Object sender, EventArgs e)
         {
             var addTermPage = ((App)Application.Current).ServiceProvider.GetService<AddTermPage>();
-            addTermPage.TermAdded += LoadTerms;
+            //addTermPage.TermAdded += LoadTerms;
             await Navigation.PushAsync(addTermPage);
         }
 

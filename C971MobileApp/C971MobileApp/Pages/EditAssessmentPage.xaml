@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971MobileApp.Pages.EditAssessmentPage"
+             Title="Edit Assessment">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                x:Name="AssessmentTypeLabel"
+Text="Edit Assessment"
+VerticalOptions="Center" 
+HorizontalOptions="Center"
+FontSize="Large"
+/>
+            <Label
+Text="Assessment Name:"
+Margin="20,10,0,0"
+/>
+            <Entry 
+x:Name="AssessmentNameField"
+Placeholder="Enter assessment name here"
+Margin="20,10,20,0"
+/>
+            <Label 
+Text="Start Date:"
+Margin="20,10,20,0"
+/>
+            <DatePicker 
+x:Name="StartDateField"
+Date="{Binding SelectedDate}"
+Margin="20,10,20,0"
+/>
+            <Label 
+Text="End Date:"
+Margin="20,10,20,0"
+/>
+            <DatePicker 
+x:Name="EndDateField"
+Date="{Binding SelectedDate}"
+Margin="20,10,20,0"
+/>
+
+            <Label Text="Notifications:" Margin="20,30,20,0"  />
+            <VerticalStackLayout HorizontalOptions="Center">
+                <HorizontalStackLayout>
+                    <Label Text="Send me notifications for start and end dates" VerticalOptions="Center"/>
+                    <CheckBox x:Name="StartNotifBox"  />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+            <Button 
+x:Name="EditAssessmentButton"
+Text="Save"
+WidthRequest="250"
+Margin="20"
+Clicked="EditAssessmentButton_Clicked"
+/>
+            <Button 
+x:Name="cancelButton"
+Text="Cancel"
+BackgroundColor="Grey"
+WidthRequest="250"
+Clicked="CancelButton_Clicked"
+/>
+
+            <Button 
+    x:Name="deleteButton"
+    Text="Delete Assessment"
+    BackgroundColor="Red"
+    TextColor="White"
+    WidthRequest="250"
+    Clicked="deleteButton_Clicked"
+    Margin="60"
+/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

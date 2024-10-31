@@ -28,6 +28,9 @@ namespace C971MobileApp
             builder.Services.AddTransient<ViewCoursePage>();
             builder.Services.AddTransient<EditCoursePage>();
             builder.Services.AddTransient<ViewNotesPage>();
+            builder.Services.AddTransient<AddAssessmentPage>();
+            builder.Services.AddTransient<ViewAssessmentPage>();
+            builder.Services.AddTransient<EditAssessmentPage>();
 
 
             

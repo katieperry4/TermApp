@@ -41,6 +41,11 @@ namespace C971MobileApp
             return await _connection.Table<Course>().Where(x => x.CourseID == courseId).FirstOrDefaultAsync();
         }
 
+        public async Task<Assessment> GetAssessmentById(int assessmentId)
+        {
+            return await _connection.Table<Assessment>().Where(x => x.AssessmentId == assessmentId).FirstOrDefaultAsync();
+        }
+
         public async Task<List<Assessment>> GetAssessments(int courseId)
         {
             return await _connection.Table<Assessment>().Where(x => x.CourseId == courseId).ToListAsync();
@@ -57,9 +62,10 @@ namespace C971MobileApp
             return course.CourseID;
         }
 
-        public async Task AddAssessment(Assessment assessment)
+        public async Task<int> AddAssessment(Assessment assessment)
         {
             await _connection.InsertAsync(assessment);
+            return assessment.AssessmentId;
         }
 
         public async Task UpdateTerm(Term term)
