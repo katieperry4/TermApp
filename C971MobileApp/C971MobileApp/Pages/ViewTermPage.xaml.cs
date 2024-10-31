@@ -64,6 +64,15 @@ public partial class ViewTermPage : ContentPage
 
     private async void OnCourseTapped(Object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        var frame = (Frame)sender;
+        var tapGesture = frame.GestureRecognizers.OfType<TapGestureRecognizer>().FirstOrDefault();
+        if (tapGesture != null) 
+        {
+            var courseId = tapGesture.CommandParameter;
+            if(courseId is int courseIdInt)
+            {
+                await Navigation.PushAsync(new ViewCoursePage(courseIdInt));
+            }
+        }
     }
 }
