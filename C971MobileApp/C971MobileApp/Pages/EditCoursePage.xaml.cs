@@ -12,18 +12,18 @@ public partial class EditCoursePage : ContentPage
     private Course _currentCourse;
 
     public EditCoursePage(int courseId)
-	{
-		InitializeComponent();
-		_courseId = courseId;
-		var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
-		var courseNotificationService = ((App)Application.Current).ServiceProvider.GetService<CourseNotificationService>();
-		var assessmentNotificationService = ((App)Application.Current).ServiceProvider.GetService<AssessmentNotificationService>();
+    {
+        InitializeComponent();
+        _courseId = courseId;
+        var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
+        var courseNotificationService = ((App)Application.Current).ServiceProvider.GetService<CourseNotificationService>();
+        var assessmentNotificationService = ((App)Application.Current).ServiceProvider.GetService<AssessmentNotificationService>();
         _courseNotificationService = courseNotificationService;
         _assessmentNotificationService = assessmentNotificationService;
-		_dbService = dbService;
+        _dbService = dbService;
         LoadCourseInfo(_courseId);
-        
-        
+
+
         //BindingContext = _currentCourse;
     }
 
@@ -32,23 +32,24 @@ public partial class EditCoursePage : ContentPage
         Course currentCourse = await _dbService.GetCourseById(courseId);
         _currentCourse = currentCourse;
         BindingContext = _currentCourse;
-        if (_currentCourse.StartNotif == true) 
+        if (_currentCourse.StartNotif == true)
         {
             StartNotifBox.IsChecked = true;
-        } else
+        }
+        else
         {
             StartNotifBox.IsChecked = false;
         }
-       
+
     }
 
     private async void cancelButton_Clicked(object sender, EventArgs e)
     {
         await Navigation.PopAsync();
-        
+
     }
 
-    private async void  SaveButton_Clicked(object sender, EventArgs e)
+    private async void SaveButton_Clicked(object sender, EventArgs e)
     {
         int termId = _currentCourse.TermId;
         bool checkInput = CheckInput();
@@ -75,13 +76,13 @@ public partial class EditCoursePage : ContentPage
             {
                 Course newCourse = await _dbService.GetCourseById(newCourseId);
                 await _courseNotificationService.UpdateCourseNotification(newCourse);
-            } 
+            }
             //if there wasn't any scheduled, but they want one now, schedule new notifs
             else if (StartNotifBox.IsChecked && _currentCourse.StartNotif == false)
             {
                 Course newCourse = await _dbService.GetCourseById(newCourseId);
                 await _courseNotificationService.ScheduleCourseNotification(newCourse);
-            } 
+            }
             //if they previously wanted notifs, but now don't, cancel previously scheduled notifs
             else if (!StartNotifBox.IsChecked && _currentCourse.StartNotif == true)
             {
@@ -99,21 +100,26 @@ public partial class EditCoursePage : ContentPage
 
     private async void deleteButton_Clicked(object sender, EventArgs e)
     {
-        List<Assessment> associatedAssessments = await _dbService.GetAssessments(_courseId);
-        if (_currentCourse != null)
+        var confirmDelete = await DisplayAlert("Confirm", "Are you sure you wish to delete this Course?", "Yes", "No");
+        if (confirmDelete)
         {
-            await _dbService.DeleteCourse(_currentCourse);
-            foreach (Assessment assessment in associatedAssessments)
+            List<Assessment> associatedAssessments = await _dbService.GetAssessments(_courseId);
+            if (_currentCourse != null)
             {
-                await _dbService.DeleteAssessment(assessment);
-                await _assessmentNotificationService.CancelAssessmentNotification(assessment.AssessmentId);
+                await _dbService.DeleteCourse(_currentCourse);
+                foreach (Assessment assessment in associatedAssessments)
+                {
+                    await _dbService.DeleteAssessment(assessment);
+                    await _assessmentNotificationService.CancelAssessmentNotification(assessment.AssessmentId);
+                }
+                await _courseNotificationService.CancelCourseNotification(_courseId);
+                var navigationStack = Navigation.NavigationStack;
+                Navigation.RemovePage(navigationStack[navigationStack.Count - 2]);
+                await Navigation.PopAsync();
+
             }
-            await _courseNotificationService.CancelCourseNotification(_courseId);
-            var navigationStack = Navigation.NavigationStack;
-            Navigation.RemovePage(navigationStack[navigationStack.Count - 2]);
-            await Navigation.PopAsync();
-         
         }
+        return;
     }
 
     private bool CheckInput()
@@ -129,7 +135,7 @@ public partial class EditCoursePage : ContentPage
         return true;
     }
 
-   
+
     private async void ShareButton_Clicked(object sender, EventArgs e)
     {
         await ShareText(_currentCourse.CourseNotes, _currentCourse.CourseName + " Notes");

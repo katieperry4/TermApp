@@ -61,7 +61,9 @@ public partial class EditTermPage : ContentPage
 
 	public async void DeleteButton_Clicked(Object sender, EventArgs e)
 	{
-        if (_termId != null)
+        var confirmDelete = await DisplayAlert("Confirm", "Are you sure you wish to delete this Term?", "Yes", "No");
+
+        if (_termId != null && confirmDelete)
         {
             Term currentTerm = await _dbService.GetTermById(_termId);
             await _dbService.DeleteTerm(currentTerm);

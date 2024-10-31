@@ -81,7 +81,9 @@ public partial class EditAssessmentPage : ContentPage
     }
     private async void deleteButton_Clicked(object sender, EventArgs e)
     {
-        if (_currentAssessment != null)
+        var confirmDelete = await DisplayAlert("Confirm", "Are you sure you wish to delete this Assessment?", "Yes", "No");
+
+        if (_currentAssessment != null && confirmDelete)
         {
             await _dbService.DeleteAssessment(_currentAssessment);
             if (_currentAssessment.StartNotif == true)
