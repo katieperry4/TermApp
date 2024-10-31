@@ -51,7 +51,7 @@ public partial class AddCoursePage : ContentPage
                 CIEmail = CIEmailField.Text,
                 CIPhone = CIPhoneField.Text,
                 CourseNotes = NotesField.Text,
-                StartNotif = false,
+                StartNotif = StartNotifBox.IsChecked,
                 EndNotif = false
             });
             if(StartNotifBox.IsChecked)

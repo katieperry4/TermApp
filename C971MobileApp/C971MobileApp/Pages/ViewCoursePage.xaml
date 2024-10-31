@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="C971MobileApp.Pages.ViewCoursePage"
-             Title="ViewCoursePage">
+             Title="View Course">
     <ScrollView>
         <VerticalStackLayout>
             <HorizontalStackLayout
@@ -55,10 +55,13 @@
             <Label Text="Assessments:" Margin="20,20,0,10" FontSize="Medium"/>
             <Label Text="Performance Assessment" Margin="20,10,20,0"/>
             <Frame Margin="20,10,20,10" BackgroundColor="LightGrey">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PATapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
                 <VerticalStackLayout>
-                    <Label x:Name="PerformanceAssessmentName" />
+                    <Label x:Name="PerformanceAssessmentName" Text="Add Assessment +"/>
                     <HorizontalStackLayout>
-                        <Label x:Name="PerformanceAssessmentStart" />
+                        <Label x:Name="PerformanceAssessmentStart"  />
                         <Label Text=" - "/>
                         <Label x:Name="PerformanceAssessmentEnd"/>
                     </HorizontalStackLayout>
@@ -66,8 +69,11 @@
             </Frame>
             <Label Text="Objective Assessment" Margin="20,10,20,0"/>
             <Frame Margin="20,10,20,100" BackgroundColor="LightGrey">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OATapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
                 <VerticalStackLayout>
-                    <Label x:Name="ObjectiveAssessmentName"/>
+                    <Label x:Name="ObjectiveAssessmentName" Text="Add Assessment +"/>
                     <HorizontalStackLayout>
                         <Label x:Name="ObjectiveAssessmentStart"/>
                         <Label Text=" - "/>

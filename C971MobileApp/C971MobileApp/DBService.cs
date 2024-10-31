@@ -67,9 +67,10 @@ namespace C971MobileApp
             await _connection.UpdateAsync(term);
         }
 
-        public async Task UpdateCourse(Course course)
+        public async Task<int> UpdateCourse(Course course)
         {
             await _connection.UpdateAsync(course);
+            return course.CourseID;
         }
 
         public async Task UpdateAssessment(Assessment assessment)

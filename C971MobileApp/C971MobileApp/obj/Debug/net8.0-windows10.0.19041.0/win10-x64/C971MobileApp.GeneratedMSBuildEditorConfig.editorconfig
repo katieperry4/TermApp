@@ -49,6 +49,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.AddTer
 build_metadata.AdditionalFiles.TargetPath = Pages\AddTermPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\AddTermPage.xaml
 
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/EditCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.EditCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditCoursePage.xaml
+
 [C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/EditTermPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.EditTermPage.xaml
@@ -60,6 +66,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewCoursePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ViewCoursePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ViewCoursePage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewNotesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewNotesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewNotesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewNotesPage.xaml
 
 [C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewTermPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
