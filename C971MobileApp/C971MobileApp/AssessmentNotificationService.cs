@@ -13,24 +13,24 @@ namespace C971MobileApp
 
         public async Task ScheduleAssessmentNotification(Assessment assessment)
         {
-            var startNotification = new NotificationRequest
+            var startNotification = new NotificationRequest()
             {
                 NotificationId = assessment.AssessmentId * 10 + 1,
                 Title = $"{assessment.AssessmentName} is starting today!",
                 Description = "Don't forget!",
-                Schedule = new NotificationRequestSchedule
+                Schedule = 
                 {
                     NotifyTime = assessment.AssessmentStart.AddHours(7)
                 }
             };
             await LocalNotificationCenter.Current.Show(startNotification);
 
-            var endNotification = new NotificationRequest
+            var endNotification = new NotificationRequest()
             {
                 NotificationId = assessment.AssessmentId * 10 + 2,
                 Title = $"{assessment.AssessmentName} is ending today.",
                 Description = "Don't forget!",
-                Schedule = new NotificationRequestSchedule
+                Schedule = 
                 {
                     NotifyTime = assessment.AssessmentEnd.AddHours(7)
                 }

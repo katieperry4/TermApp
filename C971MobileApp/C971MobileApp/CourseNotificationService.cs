@@ -12,24 +12,24 @@ namespace C971MobileApp
     {
         public async Task ScheduleCourseNotification(Course course)
         {
-            var startNotification = new NotificationRequest
+            var startNotification = new NotificationRequest()
             {
                 NotificationId = course.CourseID * 10 + 1,
                 Title = $"{course.CourseName} is starting today!",
                 Description = "Don't forget!",
-                Schedule = new NotificationRequestSchedule
+                Schedule = 
                 {
                     NotifyTime = course.CourseStart.AddHours(7)
                 }
             };
             await LocalNotificationCenter.Current.Show(startNotification);
 
-            var endNotification = new NotificationRequest
+            var endNotification = new NotificationRequest()
             {
                 NotificationId = course.CourseID * 10 + 2,
                 Title = $"{course.CourseName} is ending today.",
                 Description = "Don't forget!",
-                Schedule = new NotificationRequestSchedule
+                Schedule = 
                 {
                     NotifyTime = course.CourseEnd.AddHours(7)
                 }

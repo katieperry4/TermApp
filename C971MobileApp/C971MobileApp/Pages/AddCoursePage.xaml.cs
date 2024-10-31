@@ -21,7 +21,7 @@ public partial class AddCoursePage : ContentPage
         _courseNotificationService = courseNotificationService;
 	}
 
-    private bool CheckInput()
+    private async Task<bool> CheckInput()
     {
         if (string.IsNullOrWhiteSpace(CourseNameField.Text)||
             string.IsNullOrWhiteSpace(CINameField.Text) ||
@@ -29,15 +29,20 @@ public partial class AddCoursePage : ContentPage
             string.IsNullOrWhiteSpace(CIPhoneField.Text) || EndDateField.Date < StartDateField.Date
             )
         {
+            await DisplayAlert("Validation Error", "Ensure all fields are full and dates are correct", "OK");
+
             return false;
         }
         return true;
     }
 
+
+
 	private async void AddCourseButton_Clicked(Object sender, EventArgs e)
 	{
-        bool checkInput = CheckInput();
-        if (checkInput)
+        bool checkCourseCount = await CheckCourseCount();
+        bool checkInput = await CheckInput();
+        if (checkInput && checkCourseCount)
         {
             int selectedIndex = StatusPicker.SelectedIndex;
             int newCourseId = await _dbService.AddCourse(new Course
@@ -57,17 +62,29 @@ public partial class AddCoursePage : ContentPage
             if(StartNotifBox.IsChecked)
             {
                 Course newCourse = await _dbService.GetCourseById(newCourseId);
-                _courseNotificationService.ScheduleCourseNotification(newCourse);
+                await _courseNotificationService.ScheduleCourseNotification(newCourse);
             }
 
             await Navigation.PopAsync();
         }
         else
         {
-            await DisplayAlert("Validation Error", "Ensure all fields are full and dates are correct", "OK");
             return;
         }
 	}
+
+    private async Task<bool> CheckCourseCount()
+    {
+        List<Course> courseList = await _dbService.GetAllCourses(_termId);
+        if(courseList.Count >= 6)
+        {
+            await DisplayAlert("Error", "You cannot have more than six courses per term.", "OK");
+
+            return false;
+        }
+        return true;
+    }
+
     public async void CancelButton_Clicked(Object sender, EventArgs e)
     {
         await Navigation.PopAsync();

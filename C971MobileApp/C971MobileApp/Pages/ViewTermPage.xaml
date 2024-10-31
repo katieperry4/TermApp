@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="C971MobileApp.Pages.ViewTermPage"
              Title="View Term">
+    <ScrollView>
     <VerticalStackLayout>
         
         <HorizontalStackLayout
@@ -52,4 +53,5 @@
             Clicked="AddCourseButton_Clicked"
             />
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

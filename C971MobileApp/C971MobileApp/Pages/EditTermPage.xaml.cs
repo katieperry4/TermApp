@@ -6,12 +6,20 @@ public partial class EditTermPage : ContentPage
 {
     private int _termId;
     private DBService? _dbService;
-	public event Action ChangeMade;
+    private CourseNotificationService? _courseNotificationService;
+    private AssessmentNotificationService? _assessmentNotificationService;
+
+    public event Action ChangeMade;
 
     public EditTermPage(int termId)
 	{
 		InitializeComponent();
-		_termId = termId;
+        var courseNotificationService = ((App)Application.Current).ServiceProvider.GetService<CourseNotificationService>();
+        var assessmentNotificationService = ((App)Application.Current).ServiceProvider.GetService<AssessmentNotificationService>();
+        _courseNotificationService = courseNotificationService;
+        _assessmentNotificationService = assessmentNotificationService;
+
+        _termId = termId;
         var dbService = ((App)Application.Current).ServiceProvider.GetService<DBService>();
 		_dbService = dbService;
         LoadTerm();
@@ -65,12 +73,24 @@ public partial class EditTermPage : ContentPage
 
         if (_termId != null && confirmDelete)
         {
+			List<Course> termCourses = await _dbService.GetAllCourses(_termId);
+			foreach(Course course in termCourses)
+			{
+                List<Assessment> associatedAssessments = await _dbService.GetAssessments(course.CourseID);
+                foreach (Assessment assessment in associatedAssessments)
+                {
+                    await _dbService.DeleteAssessment(assessment);
+                    await _assessmentNotificationService.CancelAssessmentNotification(assessment.AssessmentId);
+                }
+                await _courseNotificationService.CancelCourseNotification(course.CourseID);
+                await _dbService.DeleteCourse(course);
+			}
+
             Term currentTerm = await _dbService.GetTermById(_termId);
             await _dbService.DeleteTerm(currentTerm);
-			currentTerm = null;
-            await Task.Delay(100);
+			//currentTerm = null;
+           
             await Navigation.PopToRootAsync();
-            //Application.Current.MainPage = new NavigationPage(new MainPage());
         }
     }
 }

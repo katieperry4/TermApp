@@ -3,48 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\editcoursepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\editcoursepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\editassessmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\editassessmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\viewcoursepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\viewcoursepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\viewcoursepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\viewcoursepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\coursenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\coursenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\addcoursepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\addcoursepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\viewassessmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\viewassessmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\viewassessmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\viewassessmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\pages\\addcoursepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\pages\\addcoursepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,119 +42,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseNotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\CourseNotificationService.cs",
-              "RelativeDocumentMoniker": "C971MobileApp\\CourseNotificationService.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\CourseNotificationService.cs",
-              "RelativeToolTip": "C971MobileApp\\CourseNotificationService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T20:21:33.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditAssessmentPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\EditAssessmentPage.xaml.cs",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\EditAssessmentPage.xaml.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\EditAssessmentPage.xaml.cs",
-              "RelativeToolTip": "C971MobileApp\\Pages\\EditAssessmentPage.xaml.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAkwFwAAAAMAAAAAAAAAA==",
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "C971MobileApp\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MainPage.xaml.cs",
+              "RelativeToolTip": "C971MobileApp\\MainPage.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T20:10:56.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ViewAssessmentPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewAssessmentPage.xaml.cs",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\ViewAssessmentPage.xaml.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewAssessmentPage.xaml.cs",
-              "RelativeToolTip": "C971MobileApp\\Pages\\ViewAssessmentPage.xaml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T20:04:02.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ViewAssessmentPage.xaml",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewAssessmentPage.xaml",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\ViewAssessmentPage.xaml",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewAssessmentPage.xaml",
-              "RelativeToolTip": "C971MobileApp\\Pages\\ViewAssessmentPage.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-31T20:02:28.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewCoursePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewCoursePage.xaml.cs",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\ViewCoursePage.xaml.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewCoursePage.xaml.cs",
-              "RelativeToolTip": "C971MobileApp\\Pages\\ViewCoursePage.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAawDYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T13:13:39.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViewCoursePage.xaml",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewCoursePage.xaml",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\ViewCoursePage.xaml",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\ViewCoursePage.xaml",
-              "RelativeToolTip": "C971MobileApp\\Pages\\ViewCoursePage.xaml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADoAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T22:15:20.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddCoursePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\AddCoursePage.xaml.cs",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\AddCoursePage.xaml.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\AddCoursePage.xaml.cs",
-              "RelativeToolTip": "C971MobileApp\\Pages\\AddCoursePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T20:05:10.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddCoursePage.xaml",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\AddCoursePage.xaml",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\AddCoursePage.xaml",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\AddCoursePage.xaml",
-              "RelativeToolTip": "C971MobileApp\\Pages\\AddCoursePage.xaml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-30T20:02:24.77Z",
+              "WhenOpened": "2024-10-31T21:38:36.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditCoursePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\EditCoursePage.xaml.cs",
-              "RelativeDocumentMoniker": "C971MobileApp\\Pages\\EditCoursePage.xaml.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Pages\\EditCoursePage.xaml.cs",
-              "RelativeToolTip": "C971MobileApp\\Pages\\EditCoursePage.xaml.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAgwGIAAAAAAAAAAAAAAA==",
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "C971MobileApp\\Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "C971MobileApp\\Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T20:17:50.055Z",
+              "WhenOpened": "2024-10-31T21:36:17.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "C971MobileApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\App.xaml.cs",
+              "RelativeToolTip": "C971MobileApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:30:29.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\CourseNotificationService.cs",
+              "RelativeDocumentMoniker": "C971MobileApp\\CourseNotificationService.cs",
+              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\CourseNotificationService.cs",
+              "RelativeToolTip": "C971MobileApp\\CourseNotificationService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:26:23.629Z",
               "EditorCaption": ""
             },
             {
@@ -185,20 +100,20 @@
               "RelativeDocumentMoniker": "C971MobileApp\\DBService.cs",
               "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\DBService.cs",
               "RelativeToolTip": "C971MobileApp\\DBService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwGgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwGAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T15:30:44.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "C971MobileApp\\MauiProgram.cs",
               "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MauiProgram.cs",
               "RelativeToolTip": "C971MobileApp\\MauiProgram.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBkAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T18:57:33.149Z",
               "EditorCaption": ""
