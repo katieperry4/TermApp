@@ -23,6 +23,7 @@ public partial class ViewAssessmentPage : ContentPage
         AssessmentNameLabel.Text = _currentAssessment.AssessmentName;
         StartDateLabel.Text = _currentAssessment.FormattedAssessmentStart;
         EndDateLabel.Text = _currentAssessment.FormattedAssessmentEnd;
+        TypeLabel.Text = _currentAssessment.AssessmentType;
         NotifLabel.Text = _currentAssessment.StartNotif ? "Enabled" : "Disabled";
     }
 

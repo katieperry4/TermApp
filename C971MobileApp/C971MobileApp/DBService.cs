@@ -16,10 +16,15 @@ namespace C971MobileApp
         public DBService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_Name));
-            _connection.CreateTableAsync<Term>().Wait();
-            _connection.CreateTableAsync<Course>().Wait();
-            _connection.CreateTableAsync<Assessment>().Wait();
-            SeedData();
+            
+        }
+
+        public async Task InitializeDB()
+        {
+            await _connection.CreateTableAsync<Term>();
+            await _connection.CreateTableAsync<Course>();
+            await _connection.CreateTableAsync<Assessment>();
+            await SeedData();
         }
 
         public async Task SeedData()

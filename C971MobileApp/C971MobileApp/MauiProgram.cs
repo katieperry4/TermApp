@@ -38,8 +38,13 @@ namespace C971MobileApp
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            var app = builder.Build();
 
-            return builder.Build();
+            var dbService = app.Services.GetService<DBService>();
+            Task.Run(async() => await dbService?.InitializeDB()).Wait();
+
+            return app;
+            //return builder.Build();
         }
     }
 }

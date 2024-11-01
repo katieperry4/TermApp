@@ -136,17 +136,5 @@ public partial class EditCoursePage : ContentPage
     }
 
 
-    private async void ShareButton_Clicked(object sender, EventArgs e)
-    {
-        await ShareText(_currentCourse.CourseNotes, _currentCourse.CourseName + " Notes");
-    }
-
-    public async Task ShareText(string text, string title)
-    {
-        await Share.Default.RequestAsync(new ShareTextRequest
-        {
-            Text = text,
-            Title = title
-        });
-    }
+    
 }

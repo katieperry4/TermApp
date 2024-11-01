@@ -78,11 +78,7 @@ Margin="20,10,20,0"
 
             <Label Text="Notes:" Margin="20,30,20,0" />
             <Editor x:Name="NotesField" Text="{Binding CourseNotes}" Placeholder="Enter notes here" Margin="20,10,20,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-            <HorizontalStackLayout HorizontalOptions="Center">
-                <Button x:Name="ShareButton" Text="Share" Margin="0,10,30,0" Clicked="ShareButton_Clicked"/>
-                
-                <Button x:Name="ViewButton" Text="View" Margin="0,10,20,0"/>
-            </HorizontalStackLayout>
+            
 
 
 
