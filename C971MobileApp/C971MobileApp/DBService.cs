@@ -16,9 +16,10 @@ namespace C971MobileApp
         public DBService()
         {
             _connection = new SQLiteAsyncConnection(Path.Combine(FileSystem.AppDataDirectory, DB_Name));
-            _connection.CreateTableAsync<Term>();
-            _connection.CreateTableAsync<Course>();
-            _connection.CreateTableAsync<Assessment>();
+            _connection.CreateTableAsync<Term>().Wait();
+            _connection.CreateTableAsync<Course>().Wait();
+            _connection.CreateTableAsync<Assessment>().Wait();
+            SeedData();
         }
 
         public async Task SeedData()
@@ -35,7 +36,7 @@ namespace C971MobileApp
                 var term = await _connection.Table<Term>().FirstOrDefaultAsync();
                 if (term != null)
                 {
-                    await _connection.InsertAsync(new Course {CourseName = "Hardware and Operating Systems", CourseStatus = "In Progress", CIName = "Anika Patel", CIEmail = "anika.patel@strimeuniversity.com", CIPhone = "555-123-4567", CourseStart = new DateTime(2024, 10,15), CourseEnd = new DateTime(2024,11,30), CourseNotes = "This is a very difficult class, it's a good thing I have this notes section to write down all of my thoughts.", StartNotif = false, EndNotif = false, TermId=term.TermId });
+                    await _connection.InsertAsync(new Course {CourseName = "Software 1", CourseStatus = "In Progress", CIName = "Anika Patel", CIEmail = "anika.patel@strimeuniversity.edu", CIPhone = "555-123-4567", CourseStart = new DateTime(2024, 10,15), CourseEnd = new DateTime(2024,11,30), CourseNotes = "This is a very difficult class, it's a good thing I have this notes section to write down all of my thoughts.", StartNotif = false, EndNotif = false, TermId=term.TermId });
                 }
             }
 
@@ -45,7 +46,7 @@ namespace C971MobileApp
                 var course = await _connection.Table<Course>().FirstOrDefaultAsync();
                 if (course != null) 
                 {
-                    await _connection.InsertAsync(new Assessment {AssessmentName = "Hardware PA", AssessmentType = "Performance", CourseId = course.CourseID, AssessmentStart = new DateTime(2024, 11, 8), AssessmentEnd = new DateTime(2024, 11, 15), StartNotif = false, EndNotif = false});
+                    await _connection.InsertAsync(new Assessment {AssessmentName = "Schedule App", AssessmentType = "Performance", CourseId = course.CourseID, AssessmentStart = new DateTime(2024, 11, 8), AssessmentEnd = new DateTime(2024, 11, 15), StartNotif = false, EndNotif = false});
                     await _connection.InsertAsync(new Assessment {AssessmentName = "Proctored Test", AssessmentType = "Objective", CourseId = course.CourseID, AssessmentStart = new DateTime(2024, 11, 20), AssessmentEnd = new DateTime(2024, 11,21), StartNotif = false, EndNotif = false });
                 }
             }
