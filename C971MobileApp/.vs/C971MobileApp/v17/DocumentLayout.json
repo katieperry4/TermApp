@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\assessmentnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\assessmentnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\coursenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\coursenotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|solutionrelative:c971mobileapp\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31DF3319-26D7-4E5A-BE1E-EA33989FF59F}|C971MobileApp\\C971MobileApp.csproj|c:\\users\\wmuser\\desktop\\c971\\c971mobileapp\\c971mobileapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,12 +47,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AssessmentNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\AssessmentNotificationService.cs",
+              "RelativeDocumentMoniker": "C971MobileApp\\AssessmentNotificationService.cs",
+              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\AssessmentNotificationService.cs",
+              "RelativeToolTip": "C971MobileApp\\AssessmentNotificationService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:48:35.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "C971MobileApp\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MainPage.xaml.cs",
               "RelativeToolTip": "C971MobileApp\\MainPage.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCYAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T21:38:36.149Z",
               "EditorCaption": ""
@@ -68,12 +85,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainApplication.cs",
               "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Platforms\\Android\\MainApplication.cs",
               "RelativeDocumentMoniker": "C971MobileApp\\Platforms\\Android\\MainApplication.cs",
-              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Platforms\\Android\\MainApplication.cs*",
-              "RelativeToolTip": "C971MobileApp\\Platforms\\Android\\MainApplication.cs*",
+              "ToolTip": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "C971MobileApp\\Platforms\\Android\\MainApplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T21:36:17.011Z",
@@ -81,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "C971MobileApp\\App.xaml.cs",
@@ -94,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DBService.cs",
               "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\DBService.cs",
               "RelativeDocumentMoniker": "C971MobileApp\\DBService.cs",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\wmuser\\Desktop\\C971\\C971MobileApp\\C971MobileApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "C971MobileApp\\MauiProgram.cs",
