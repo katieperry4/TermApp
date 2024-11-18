@@ -1,0 +1,107 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = C971MobileApp
+build_property.ProjectDir = C:\Users\wmuser\Desktop\C971\C971MobileApp\C971MobileApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/AddAssessmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.AddAssessmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AddAssessmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AddAssessmentPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/AddCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.AddCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AddCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AddCoursePage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/AddTermPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.AddTermPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AddTermPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AddTermPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/EditAssessmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.EditAssessmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditAssessmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditAssessmentPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/EditCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.EditCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditCoursePage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/EditTermPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.EditTermPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\EditTermPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\EditTermPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewAssessmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewAssessmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewAssessmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewAssessmentPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewCoursePage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewNotesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewNotesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewNotesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewNotesPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Pages/ViewTermPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Pages.ViewTermPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ViewTermPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ViewTermPage.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/wmuser/Desktop/C971/C971MobileApp/C971MobileApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = C971MobileApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

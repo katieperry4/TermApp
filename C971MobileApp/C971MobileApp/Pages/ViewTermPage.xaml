@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971MobileApp.Pages.ViewTermPage"
+             Title="View Term">
+    <ScrollView>
+    <VerticalStackLayout>
+        
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Margin="0,20,0,10">
+        <Label x:Name="TermNameLabel" Text="Term Not Found"
+               FontSize="Large"
+               Margin="0,0,20,0"
+               VerticalOptions="Center"
+               />
+            <Button Text="..."
+                    CornerRadius="100"
+                    x:Name="EditTermButton"
+                    Clicked="EditTermButton_Clicked"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+            <Label x:Name="StartDateLabel" Text="00/0000" TextColor="Grey"/>
+            <Label x:Name="HyphenLabel" Text=" - " TextColor="Grey"/>
+            <Label x:Name="EndDateLabel" Text="00/0000" TextColor="Grey"/>
+        </HorizontalStackLayout>
+
+        <CollectionView ItemsSource="{Binding Courses}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="LightGrey" CornerRadius="50" Margin="10,10,10,0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCourseTapped" CommandParameter="{Binding CourseID}"/>
+                        </Frame.GestureRecognizers>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding CourseName}" FontSize="18" FontAttributes="Bold"/>
+                            <HorizontalStackLayout>
+                                <Label Text="{Binding FormattedCourseStart}"/>
+                                <Label Text=" - "/>
+                                <Label Text="{Binding FormattedCourseEnd}"/>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button
+            Text="Add Course"
+            Margin="40,20,40,10"
+            Clicked="AddCourseButton_Clicked"
+            />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
