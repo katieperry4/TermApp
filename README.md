@@ -16,15 +16,19 @@ This is a .NET MAUI application that tracks terms, courses, and assessments. It'
 
 ## Visuals
 Home / Viewing all terms:
+
 ![TermApp](https://imgur.com/LcnLNM8.jpg)
 
 Term View (showing associated courses):
+
 ![TermApp](https://imgur.com/0o9cHQi.jpg)
 
 Course Info View:
+
 ![TermApp](https://imgur.com/9lMzxBZ.jpg)
 
 Assessment Info View:
+
 ![TermApp](https://imgur.com/3SdcBX0.jpg)
 
 
